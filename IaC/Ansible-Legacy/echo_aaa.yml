@@ -1,0 +1,2 @@
+- name: run "echo"
+  command: echo "aaa"

@@ -1,0 +1,11 @@
+- name: set_fact
+  set_fact:
+    randstatus: "{{ 3 | random }}"
+
+- name: write status
+  lineinfile:
+    create: yes
+    path: "{{ __movement_status_filepath__ }}"
+    state: present
+    regexp : '^'
+    line : "{{ randstatus }}"

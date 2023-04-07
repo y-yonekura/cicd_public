@@ -1,0 +1,12 @@
+- name: set_pause_time
+  set_fact:
+    pause_time: "{{ 300 | random }}"
+
+- name: pause_rand
+  pause:
+    seconds: "{{ pause_time }}"
+  register: pause_time
+
+- name: show pause_time
+  debug:
+    var: pause_time

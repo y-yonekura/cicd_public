@@ -1,0 +1,33 @@
+- name: make yaml file
+  blockinfile:
+    create: yes
+    mode: 0644
+    insertbefore: EOF
+    marker: ""
+    dest: "{{ __parameter_dir__  }}/{{ inventory_hostname }}/hogehoge.yml"
+    content: |
+      var_1 : aaa
+      var_2 : bbb
+      var_3 : ccc
+      var_4 : ddd
+      var_5 : eee
+      var_6 : fff
+      var_7 : ggg
+      var_8 : hhh
+      var_9 : iii
+      var_10 : jjj
+      file_1 : vconsole.conf
+      file_2 : yum.conf
+  delegate_to: localhost
+
+- name: get hosts
+  fetch:
+    src: /etc/vconsole.conf
+    dest: "{{ __parameters_file_dir__ }}/{{ inventory_hostname }}/"
+    flat: yes
+
+- name: get messages
+  fetch:
+    src: /etc/yum.conf
+    dest: "{{ __parameters_file_dir__ }}/{{ inventory_hostname }}/"
+    flat: yes
