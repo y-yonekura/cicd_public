@@ -1,3 +1,3 @@
 # cicd_public
 
-sample Iac
+sample Iac :xxx
