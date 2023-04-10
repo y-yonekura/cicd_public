@@ -1,2 +1,2 @@
-- name: run "echo"
-  command: echo "aaa"
+- name: run "echo_dev1"
+  command: echo "aaa_dev1"
