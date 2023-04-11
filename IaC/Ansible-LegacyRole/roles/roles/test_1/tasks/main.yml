@@ -9,6 +9,6 @@
   shell:
     echo {{ item.test3_1 }} >> /tmp/test.txt;
     echo {{ item.test3_2 }} >> /tmp/test.txt;
-    echo {{ item.test3_3 }} >> /tmp/test.txt;
+    echo {{ item.test3_3 }} >> /tmp/test2.txt;
   with_items: "{{ VAR_test3 }}"
 
