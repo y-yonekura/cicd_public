@@ -5,9 +5,9 @@ exec_list:
   - expect: 'password:'
     exec: "{{ __loginpassword__ }}"
   - expect: 'sshpass@'
-    exec: /usr/bin/cp -f '{{ CPF_01 }}' /temp/{{ __loginhostname__ }}_CPF_01.txt
+    exec: /usr/bin/cp -f '{{ CPF_01 }}' /temp/{{ __inventory_hostname__ }}_CPF_01.txt
   - expect: 'sshpass@'
-    exec: /usr/bin/cp -f '{{ TPF_01 }}' /temp/{{ __loginhostname__ }}_TPF_01.txt
+    exec: /usr/bin/cp -f '{{ TPF_01 }}' /temp/{{ __inventory_hostname__ }}_TPF_01.txt
   - expect: 'sshpass@'
     exec: echo '{{ GBL_01 }}'
   - expect: 'sshpass@'
