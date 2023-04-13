@@ -11,7 +11,7 @@ exec_list:
   - expect: 'sshpass@'
     exec: echo '{{ GBL_01 }}'
   - expect: 'sshpass@'
-    exec: echo '{{ VAR_01 }}'
+    exec: echo '{{ VAR_01 }}_aa'
 #  - expect: 'sshpass@'
 #    exec: echo '{{ VAR_02 }}'
 #  - expect: 'sshpass@'
