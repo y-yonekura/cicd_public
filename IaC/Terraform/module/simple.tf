@@ -12,8 +12,8 @@ output "pet" {
 variable "test_map_var" {
 	type = map
 	default = {
-		key_1 : "default_value_123",
-		key_2 : "default_value_456"
+		key_1 : "default_value_123_pub",
+		key_2 : "default_value_456_pub"
 	}
 }
 
@@ -31,5 +31,5 @@ output "output_map_key2" {
 }
 
 output "output_str_var" {
-  value = "${var.test_str_var}_pub__"
+  value = "${var.test_str_var}_pub___pub"
 }
