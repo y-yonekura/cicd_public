@@ -1,2 +1,2 @@
-- name: run "echo_echo_pubBB"
+- name: run "echo_echo_pubBBV"
   command: echo {{ VAR_STR_1 }}
