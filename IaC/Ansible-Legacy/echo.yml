@@ -1,2 +1,2 @@
-- name: run "echo_echo_pub_"
+- name: run "echo_echo_pub_1"
   command: echo {{ VAR_STR_1 }}
