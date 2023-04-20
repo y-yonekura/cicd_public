@@ -9,9 +9,9 @@ exec_list:
   - expect: 'sshpass@'
     exec: /usr/bin/cp -f '{{ TPF_01 }}' /temp/{{ __inventory_hostname__ }}_TPF_01.txt
   - expect: 'sshpass@'
-    exec: echo '{{ GBL_01 }}_pub'
+    exec: echo '{{ GBL_01 }}_pub__'
   - expect: 'sshpass@'
-    exec: echo '{{ VAR_01 }}_pub'
+    exec: echo '{{ VAR_01 }}_pub__'
 #  - expect: 'sshpass@'
 #    exec: echo '{{ VAR_02 }}'
 #  - expect: 'sshpass@'
