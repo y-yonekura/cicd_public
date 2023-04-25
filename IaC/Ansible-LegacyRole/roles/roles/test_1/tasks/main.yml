@@ -7,8 +7,8 @@
 
 - name: display data3
   shell:
-    echo {{ item.test3_1 }} >> /tmp/test.txt;
-    echo {{ item.test3_2 }} >> /tmp/test.txt;
-    echo {{ item.test3_3 }} >> /tmp/test2.txt;
+    echo "{{ item.test3_1 }}a" >> /tmp/test.txt;
+    echo "{{ item.test3_2 }}a" >> /tmp/test.txt;
+    echo "{{ item.test3_3 }}a" >> /tmp/test.txt;
   with_items: "{{ VAR_test3 }}"
 
