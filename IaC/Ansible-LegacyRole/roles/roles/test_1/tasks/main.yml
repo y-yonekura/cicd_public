@@ -1,5 +1,5 @@
 - name: display data1
-  shell: echo {{ VAR_test1 }} >> /tmp/test.txt
+  shell: echo "{{ VAR_test1 }}" >> /tmp/test.txt
 
 - name: display data2
   shell: echo {{ item }} >> /tmp/test.txt
