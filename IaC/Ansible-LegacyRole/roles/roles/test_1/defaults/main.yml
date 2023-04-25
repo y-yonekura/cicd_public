@@ -6,9 +6,9 @@ VAR_test2:
   - def2-3
 
 VAR_test3:
-  - test3_1: 1
-    test3_2: 2
-    test3_3: 3
+  - test3_1: 11
+    test3_2: 22
+    test3_3: 33
 
 VAR_test4:
   - test4_1: def4-1
