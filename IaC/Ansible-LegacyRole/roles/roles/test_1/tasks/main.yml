@@ -3,7 +3,7 @@
 
 - name: display data2
   shell: echo {{ item }} >> /tmp/test.txt
-  with_items: "{{ VAR_test2 }}_pub__11a"
+  with_items: "{{ VAR_test2 }}"
 
 - name: display data3
   shell:
