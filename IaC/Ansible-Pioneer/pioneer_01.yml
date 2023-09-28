@@ -4,17 +4,20 @@ conf:
 exec_list:
   - expect: 'password:'
     exec: "{{ __loginpassword__ }}"
-  - expect: 'sshpass@'
-    exec: /usr/bin/cp -f '{{ CPF_01 }}' /temp/{{ __inventory_hostname__ }}_CPF_01.txt
-  - expect: 'sshpass@'
-    exec: /usr/bin/cp -f '{{ TPF_01 }}' /temp/{{ __inventory_hostname__ }}_TPF_01.txt
-  - expect: 'sshpass@'
+#  - expect: '{{ __loginuser__ }}@'
+#    exec: /usr/bin/cp -f '{{ CPF_01 }}' /temp/{{ __inventory_hostname__ }}_CPF_01.txt
+#  - expect: '{{ __loginuser__ }}@'
+#    exec: /usr/bin/cp -f '{{ TPF_01 }}' /temp/{{ __inventory_hostname__ }}_TPF_01.txt
+  - expect: '{{ __loginuser__ }}@'
     exec: echo '{{ GBL_01 }}_pub__CAaa'
-  - expect: 'sshpass@'
+  - expect: '{{ __loginuser__ }}@'
     exec: echo '{{ VAR_01 }}_pub__CAaa'
-#  - expect: 'sshpass@'
+#  - expect: '{{ __loginuser__ }}@'
 #    exec: echo '{{ VAR_02 }}'
-#  - expect: 'sshpass@'
+#  - expect: '{{ __loginuser__ }}@'
 #    exec: echo '{{ VAR_03 }}'
 
 # {{ __inventory_hostname__ }}
+
+  - expect: '{{ __loginuser__ }}@'
+    exec: exit
