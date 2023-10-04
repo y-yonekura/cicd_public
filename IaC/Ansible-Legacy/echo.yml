@@ -1,2 +1,2 @@
-- name: run "echo_2.2_1_aaaaa"
+- name: run "echo_2.2_1_aaaaaaaaa"
   command: echo {{ VAR_STR_1 }}
